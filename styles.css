@@ -1,0 +1,45 @@
+/* 可以被放置在一个单独的 .css 文件中 */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+  
+.main-image-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin-bottom: 20px;
+}
+  
+.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease;
+}
+  
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.thumbnail {
+  cursor: pointer;
+  width: 100px; /* Set thumbnail width */
+  height: auto;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
